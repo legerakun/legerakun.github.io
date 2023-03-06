@@ -2,3 +2,9 @@ theme: minima
 
 minima:
   skin: dark
+
+title: 🌀 Vortex
+author: Legera
+description: > 
+  Vortex is a powerfull credit system addon.
+  Support of MySQL and SQLite.
