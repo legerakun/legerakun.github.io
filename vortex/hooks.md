@@ -20,6 +20,10 @@
 
 hook.Run("vortex.onItemBuy", client, itemTable)
 
+hook.Add("vortex.onItemBuy", "VortexOnItemBuy", function(client, itemTable)
+ . . .
+end)
+
 2. vortex.onItemBuySuccess
 -- Called when item saving to client library
 
@@ -44,6 +48,10 @@ hook.Run("vortex.onItemBuy", client, itemTable)
 
 hook.Run("vortex.onItemBuySuccess", client, dataClient, dataItem)
 
+hook.Add("vortex.onItemBuySuccess", "VortexOnItemBuySuccess", function(client, dataClient, dataItem)
+ . . . 
+end)
+
 3. vortex.onItemEdit
 -- Called when item was edited
 
@@ -60,10 +68,18 @@ hook.Run("vortex.onItemBuySuccess", client, dataClient, dataItem)
 
 hook.Run("vortex.onItemEdit", client, id, name, price, item, feature, feature_amount, icon, status)
 
+hook.Add("vortex.onItemEdit", "VortexOnItemEdit", function(client, id, name, price, item, feature, feature_amount, icon, status)
+ . . .
+end)
+
 4. vortex.loadCategories
 -- Called when categories needs to be loaded
 
 hook.Run("vortex.loadCategories")
+
+hook.Add("vortex.loadCategories", "VortexLoadCategories", function()
+ . . .
+end)
 ```
 
 #### Functions:
