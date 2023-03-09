@@ -1,3 +1,3 @@
-# Hooks and Functions of 🌀 Vortex
+## Hooks and Functions of 🌀 Vortex
 
 ####
