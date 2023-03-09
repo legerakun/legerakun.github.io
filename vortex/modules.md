@@ -1,6 +1,6 @@
 # Creating new module
 
-### 1. Create new folder with unique name in *vortex-\*version\*/vortex_modules/*
+### 1. Create new folder with unique name in **vortex-\*version\*/vortex_modules/**
 
 ### 2. Create new .lua file with unique name in created folder
 ### All new files must start with:
