@@ -6,6 +6,8 @@
 
 #### [Creating new category](https://legerakun.github.io/vortex/categories)
 
+#### [Creating new feature](https://legerakun.github.io/vortex/features)
+
 #### [Creating new module](https://legerakun.github.io/vortex/modules)
 
 #### [Hooks and Functions of 🌀 Vortex](https://legerakun.github.io/vortex/hooks)
