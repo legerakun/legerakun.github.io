@@ -19,11 +19,12 @@ categories.example.image              = Material("vortex/gun.png", "vertexalpha 
 categories.example.bItemTableIsImages = "True"
 
 -- Table of items of category
+-- Can be a function that returns table, for example weapons.GetList()
 categories.example.itemTable          = {Material("vortex/cross.png", "vertexalpha vertexcolor"),
                                          Material("vortex/shield.png", "vertexalpha vertexcolor")
                                         }
                                         
--- Table of features of category                                        
+-- Table of features of category
 categories.example.featureTable       = {"Add to library",
                                          "Do not add to library"
                                         }
