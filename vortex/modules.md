@@ -53,7 +53,7 @@ if SERVER then
 		end
 	end)
 
-	-- Hook called when item saving to client database
+	-- Hook called when item successfully bought
 	hook.Add("vortex.onItemBuySuccess", "VortexSAMOnItemBuySuccess", function(client, dataClient, dataItem)
   
 		-- If "Time" is 0 it means that rank should be applied permanently. We can add this item to client library
