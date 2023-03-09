@@ -25,7 +25,7 @@ hook.Add("vortex.onItemBuy", "VortexOnItemBuy", function(client, itemTable)
 end)
 
 2. vortex.onItemBuySuccess
--- [SERVER] Called when item succesfully bought
+-- [SERVER] Called when item successfully bought
 
 -- Player client
 
