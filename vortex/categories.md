@@ -1,6 +1,6 @@
 # Creating new category
 
-## Example of category
+### Example of category
 
 ```
 -- Table of category
