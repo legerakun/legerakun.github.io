@@ -8,4 +8,4 @@
 
 #### [Creating new module](https://legerakun.github.io/vortex/modules)
 
-#### [Hooks and Functions of cyclone Vortex](https://legerakun.github.io/vortex/hooks)
+#### [Hooks and Functions of 🌀 Vortex](https://legerakun.github.io/vortex/hooks)
