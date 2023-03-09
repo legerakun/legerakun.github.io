@@ -4,6 +4,7 @@
 2. Copy content from vortex-*<version>*/languages/sh_english.lua
 3. Make needed changes in sh_*<language>*.lua
 4. To change localization file you need to make a replacement:
+
 In vortex-*<version>*/autorun/vortex.lua replace 
 ```
 vortex.loadFile("sh_english.lua", "vortex/languages/") 
