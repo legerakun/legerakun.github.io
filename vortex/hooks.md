@@ -3,7 +3,7 @@
 #### Hooks:
 ```
 1. vortex.onItemBuy
--- Called when client bought item
+-- [SERVER] Called when client bought item
 
 -- Player client
 
@@ -25,7 +25,7 @@ hook.Add("vortex.onItemBuy", "VortexOnItemBuy", function(client, itemTable)
 end)
 
 2. vortex.onItemBuySuccess
--- Called when item saving to client library
+-- [SERVER] Called when item succesfully bought
 
 -- Player client
 
@@ -53,7 +53,7 @@ hook.Add("vortex.onItemBuySuccess", "VortexOnItemBuySuccess", function(client, d
 end)
 
 3. vortex.onItemEdit
--- Called when item was edited
+-- [SERVER] Called when item was edited
 
 -- Player client
 -- number id
@@ -73,7 +73,7 @@ hook.Add("vortex.onItemEdit", "VortexOnItemEdit", function(client, id, name, pri
 end)
 
 4. vortex.loadCategories
--- Called when categories needs to be loaded
+-- [CLIENT] Called when categories needs to be loaded
 
 hook.Run("vortex.loadCategories")
 
@@ -90,7 +90,7 @@ vortex.updateItemTable(id, name, price, item, feature, feature_amount, icon, sta
 -- [SERVER] Deletes item by item id
 vortex.deleteItemTable(id)
 
--- [SERVER] Updates item purchases by steamid
+-- [SERVER] Updates player purchases by steamid
 vortex.updatePlayerPurchases(steamid, purchases)
 
 -- [SERVER] Add credits to player. client is Player who executes command. steamid of Player to add credits
@@ -112,6 +112,6 @@ vortex.isPlayer(client, target)
 -- rank can be "admin" or "superadmin"
 vortex.hasPrivileges(client, rank)
 
--- [CLIENT/SERVER] returns material
+-- [CLIENT] returns material
 vortex.createMaterial(path)
 ```
