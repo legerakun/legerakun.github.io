@@ -10,4 +10,5 @@ minima:
 theme: minima
 
 header_pages:
-  - about.md
+  - portfolio.md
+  - vortex.md
