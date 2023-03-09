@@ -1,4 +1,4 @@
-## Adding localization files
+## Creating localization files
 
 #### 1. Create **sh_\*your_language\*.lua** file in **vortex-\*version\*/languages/**
 #### 2. Copy content from **vortex-\*version\*/languages/sh_english.lua** to **vortex-\*version\*/languages/sh_\*your_language\*.lua**
