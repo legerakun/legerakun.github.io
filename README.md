@@ -1,2 +1,3 @@
 # Something
-[About](https://legerakun.github.io/about)
+[About](https://legerakun.github.io/portfolio)
+[About](https://legerakun.github.io/vortex)
