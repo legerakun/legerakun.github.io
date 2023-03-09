@@ -6,18 +6,18 @@
 #### 2. Create new .lua file with unique name in created folder
 
 #### All new files must start with:
-##### 2.1. cl_ for client files (these files are downloaded by the client)
-##### 2.2. sh_ for shared files (these files are also downloaded by the client)
-##### 2.3. sv_ for server files (these files are *not* downloaded by the client)
+#### 2.1. cl_ for client files (these files are downloaded by the client)
+#### 2.2. sh_ for shared files (these files are also downloaded by the client)
+#### 2.3. sv_ for server files (these files are *not* downloaded by the client)
 
-##### To know more about this read [Garry's Mod Wiki](https://wiki.facepunch.com/gmod/States)
+#### To know more about this read [Garry's Mod Wiki](https://wiki.facepunch.com/gmod/States)
 
 
 #### 3. Edit created files.
 
-##### Example of module for [SAM GmodStore](https://www.gmodstore.com/market/view/sam)
+#### Example of module for [SAM GmodStore](https://www.gmodstore.com/market/view/sam)
 
-##### code of **vortex-\*version\*/vortex_modules/sam/sh_sam.lua**
+#### code of **vortex-\*version\*/vortex_modules/sam/sh_sam.lua**
 ```
 -- If vortex loaded this file will not reload everytime
 if VORTEX_LOADED then return end
