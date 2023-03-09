@@ -28,13 +28,13 @@ vortex.language.ranks = "Ranks"
 -- Working in server realm
 if SERVER then
 
-  -- Hook called when client bought a new item
+	-- Hook called when client bought a new item
 	hook.Add("vortex.onItemBuy", "VortexSAMOnItemBuy", function(client, itemTable)
      
-    -- If item category is "Ranks" 
+		-- If item category is "Ranks" 
 		if itemTable.category == vortex.language.ranks then
     
-      -- And feature is "Time" we apply new rank to a client
+			-- And feature is "Time" we apply new rank to a client
 			if itemTable.feature == vortex.language.time then
 				local old_rank = client:sam_getrank()
 				local expiry_date = tonumber(itemTable.feature_amount)
@@ -53,19 +53,19 @@ if SERVER then
 		end
 	end)
 
-  -- Hook called when item saving to client database
+	-- Hook called when item saving to client database
 	hook.Add("vortex.onItemBuySuccess", "VortexSAMOnItemBuySuccess", function(client, dataClient, dataItem)
   
-    -- If "Time" is 0 it means that rank should be applied permanently. We can add this item to client library
+		-- If "Time" is 0 it means that rank should be applied permanently. We can add this item to client library
 		if dataItem.feature == vortex.language.time and tonumber(dataItem.feature_amount) == 0 then
 			vortex.sql.module.updatePlayerLibrary(client, dataClient, dataItem)
 		end	
 	end)	
 
-  -- Hook called when someone edit item.
+	-- Hook called when someone edit item.
 	hook.Add("vortex.onItemEdit", "VortexSAMOnItemEdit", function(client, id, name, price, item, feature, feature_amount, icon, status)
   
-    -- If "Time" was changed from 0 we deleting item from everyone's library
+		-- If "Time" was changed from 0 we deleting item from everyone's library
 		if feature == vortex.language.time and feature_amount > 0 then
 			vortex.sql.module.deleteItemFromLibraries(id)
 		end
@@ -74,10 +74,10 @@ if SERVER then
   --Now working in client realm
 else
 
-  -- Hook called when categories needs to be loaded
+	-- Hook called when categories needs to be loaded
 	hook.Add("vortex.loadCategories", "VortexSAMLoadCategories", function()
     
-    -- Creating new category
+		-- Creating new category
 		vortex.categories.ranks                    = {}
 		vortex.categories.ranks.name               = vortex.language.ranks
 		vortex.categories.ranks.image              = Material("vortex/shield.png", "vertexalpha vertexcolor")
