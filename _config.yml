@@ -8,3 +8,6 @@ minima:
   skin: dark
 
 theme: minima
+
+header_pages:
+  - about.md
