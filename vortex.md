@@ -4,6 +4,8 @@
 
 #### [Installation and Setup](https://legerakun.github.io/vortex/install)
 
+#### [MySQL Setup](https://legerakun.github.io/vortex/mysql)
+
 #### [Creating localization files](https://legerakun.github.io/vortex/language)
 
 #### [Creating new category](https://legerakun.github.io/vortex/categories)
