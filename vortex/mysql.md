@@ -6,7 +6,6 @@
 #### You need to create database and a user with password if you don't have.
 #### You will probably need to know a port and socket of your database.
 
-
 #### 1. Install MySQLOO to your server. [MySQLOO GitHub](https://github.com/FredyH/MySQLOO).
 #### 2. Edit **vortex-\*version\*/sql/sv_sql_config.lua**:
 ```
