@@ -9,4 +9,4 @@
 #### \[OPTIONAL\] Setup
 1. You can change color theme by editing **vortex-\*version\*/config/sh_config.lua**.
 2. You can change localization. [Guide](https://legerakun.github.io/vortex/language).
-3. You can change prefered database to MySQL. [Guide](https://legerakun.github.io/vortex).
+3. You can change prefered database to MySQL. [Guide](https://legerakun.github.io/vortex/mysql).
